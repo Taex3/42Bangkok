@@ -1,0 +1,33 @@
+.cutter {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+  }
+  
+  .section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+ }
+ .parallax {
+  text-align: center;
+  color: aliceblue;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+  .static {
+    background: black;
+ }
+  .bg1 {
+    background-image: url("https://res.cloudinary.com/gagan/image/upload/v1594040000/bijyl26bjkw7z4lyaazf.jpg");
+ }
+  .bg2 {
+    background-image: url("https://static.toiimg.com/photo/84855613.cms");
+ }

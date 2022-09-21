@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    section {
+      width: 100%;
+      height: 100vh;
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 100px;
+      
+    }
+
+    section:nth-child(even) {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .scollTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      padding: 10px 15px;
+      background-color: #000;
+      color: #fff;
+      border-radius: 5px;
+      border-radius: 1px solid #fff;
+      cursor: pointer;
+      transition: all 0.5s ease 0s;
+    }
+
+    .scollTop:hover {
+      background-color: #f7f7f7;
+      color: #000;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section>one</section>>
+  <section>two</section>>
+  <section>three</section>>
+  <section>four</section>>
+  <section>five</section>>
+
+
+  <div onclick="scrollToTop()" class="scollTop">Top</div>
+  
+
+
+
+  <script>
+    function scrollToTop() {
+      window.scollTo(0, 0);
+    }
+  </script>
+</body>
+
+</html>

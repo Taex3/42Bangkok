@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <style>
+        
+
+        /* * { */
+        /* padding: 0;
+            margin: 0; */
+        /* box-sizing: border-box; */
+        /* } */
+        /* body {
+            padding-left: 5%;
+            padding-right: 5%;
+        } */
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        h4 {
+            color: gray;
+        }
+
+        span {
+            color: orange;
+        }
+
+        p {
+            color: white;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .bg {
+            background-color: black;
+        }
+
+        .navbar {
+            /* display: flex; */
+            width: 100%;
+            justify-content: space-between;
+            align-items: right;
+            padding-left: 5%;
+            padding-right: 5%;
+            position: fixed;
+            background-color: black;
+        }
+
+        li {
+            display: inline-block;
+            list-style-type: none;
+            font-weight: bold;
+            padding: 10px 15px;
+        }
+
+        .home {
+            /* width: 100%; */
+            height: 130vh;
+            background-image: url(https://cdn.pixabay.com/photo/2016/03/26/22/13/man-1281562_960_720.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .detail {
+            /* position: absolute; */
+            padding-top: 25%;
+            padding-left: 20%;
+            /* top: 50%;
+            left: 10%; */
+            /* transform: translateY(-50%) */
+        }
+
+        .skill-box {
+            display: flex;
+            flex-direction: row;
+            padding-top: 3%;
+            width: 100%;
+            height: 50vh;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        .left-skills-box {
+            /* margin-top: 5%; */
+            padding-right: 2%;
+            flex: 50%;
+            /* margin-right: 55%; */
+        }
+
+        .right-skills-box {
+            /* margin-top: 10%; */
+            padding-left: 2%;
+            flex: 50%
+                /* margin-left: 55%; */
+        }
+
+        .experience-box {
+            display: flex;
+            flex-direction: row;
+            padding-top: 3%;
+            width: 100%;
+            height: 50vh;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        .left-experience-box {
+            padding-right: 3%;
+            flex: 50%;
+        }
+
+        .right-experience-box {
+            padding-left: 3%;
+            flex: 50%
+        }
+
+        .contact-box {
+            background-color: #32343b;
+            width: 100%;
+            height: 70vh;
+        }
+
+
+        footer {
+            padding-top: 1%;
+            font-family: monospace;
+            text-align: center;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: orange;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: black;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body class="bg">
+    <div class="navbar">
+        <h1>42Bang<span>kok</span></h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <section id="home">
+        <div class="home">
+            <div class="detail">
+                <h4>We are</h4>
+                <h1>Bdeng<span>mas</span></h1>
+                <h4>Group</h4>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div style="background-color: #32343b; padding-top: 3%;">
+            <h1 style="text-align: center;">Skills</h1>
+            <div class="skill-box">
+                <div class="left-skills-box">
+                    <div style="padding-bottom: 5%;">
+                        <p><strong>Java</strong></p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                aria-valuemax="100" style="width:80%">
+                                80%
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding-bottom: 5%;">
+                        <p><strong>Golang</strong></p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                aria-valuemax="100" style="width:70%">
+                                70%
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding-bottom: 5%;">
+                        <p><strong>C++</strong></p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                                aria-valuemax="100" style="width:50%">
+                                50%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-skills-box">
+                    <div class="left-skills-box">
+                        <div style="padding-bottom: 5%;">
+                            <p><strong>HTML</strong></p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                                    aria-valuemax="100" style="width:95%">
+                                    95%
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-bottom: 5%;">
+                            <p><strong>CSS</strong></p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                    aria-valuemax="100" style="width:70%">
+                                    70%
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-bottom: 5%;">
+                            <p><strong>Javascipt</strong></p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                    aria-valuemax="100" style="width:60%">
+                                    60%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="experience">
+        <div style="background-color: black; padding-top: 3%;">
+            <h1 style="text-align: center;">Experience</h1>
+            <div class="experience-box">
+                <div class="left-experience-box">
+                    <p style="color: lightgray;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dicta
+                        aliquam odio qui illum omnis autem provident, dignissimos blanditiis deleniti debitis, neque
+                        porro. Possimus corrupti eligendi saepe velit sit dolor laborum tempore accusamus pariatur
+                        consectetur explicabo, blanditiis fugit illo iste esse at aut recusandae laudantium assumenda
+                        minus animi? Adipisci sequi iste delectus rerum tempora voluptate vero fugit debitis fuga quasi
+                        dolorum accusantium excepturi hic rem alias, molestias voluptatem officiis facere quis eius
+                        maiores at culpa impedit itaque? Repellendus exercitationem nam odio sunt, aliquid aliquam
+                        deserunt similique ad dolorum hic architecto placeat cum quia fugiat modi obcaecati facere
+                        excepturi dicta consequatur maxime delectus doloribus eaque! Numquam, optio qui. Adipisci,
+                        architecto aut deleniti sint eaque error facilis illo enim laboriosam sit, cum ipsa eveniet
+                        explicabo odit, nisi consequuntur unde natus cupiditate doloribus nihil. Distinctio debitis non
+                        suscipit quae nisi odit provident eaque voluptas quas? Ducimus quasi libero aut at est officiis
+                        doloremque, ipsum nam error aliquid quidem nostrum! Pariatur quis optio molestias quas rerum
+                        officia mollitia id, culpa perspiciatis quasi minus reprehenderit ut porro laborum enim, neque
+                        laudantium impedit temporibus vel accusantium? Cum saepe, officia sed deleniti eveniet quidem
+                        hic ullam doloribus provident repellat aut incidunt eum dolor ipsam laudantium quaerat
+                        perferendis.</p>
+                </div>
+                <div class="right-experience-box">
+                    <p style="color: lightgray;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis quia
+                        repellendus voluptate asperiores ipsam reiciendis unde, commodi iure, dolorum sapiente aut id
+                        non vel iste natus dignissimos eius itaque illo cumque eveniet est incidunt. Nostrum ea
+                        architecto nisi blanditiis recusandae aperiam laboriosam iste odit, eaque quod a quo earum cum
+                        assumenda repudiandae inventore, nam voluptatibus sunt impedit possimus, est deleniti quasi
+                        autem modi! Provident, perferendis vel dolores in natus alias ut inventore. Optio corrupti atque
+                        nemo consequuntur ullam suscipit iste illo eaque sequi est asperiores natus, soluta animi itaque
+                        voluptatibus, eius provident! Quibusdam ad qui iusto, velit nobis tempora. Exercitationem
+                        expedita deserunt dolorem, ipsum maiores quisquam recusandae architecto debitis quia, neque
+                        assumenda, totam adipisci tempora perferendis! Aliquam numquam ipsa quas iure quam quae delectus
+                        error soluta dolorem officia, cupiditate consequatur natus porro animi ducimus at aut mollitia,
+                        id omnis quisquam fuga. Delectus rerum culpa ipsam consequatur? Ad pariatur nulla maiores. Qui
+                        eveniet error odio cumque distinctio maxime. Repudiandae quidem culpa magni inventore
+                        temporibus, ex distinctio in porro sunt explicabo amet atque delectus expedita laboriosam libero
+                        eos ullam ea odit rerum dicta praesentium molestiae voluptas ad! Ex mollitia, ea a dolorem quod
+                        ipsa consequatur deserunt veniam porro reprehenderit? Delectus, facilis velit.</p>
+                </div>
+            </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-box">
+            <div class="container">
+                <input type="text" id="fname" name="firstname" placeholder="Your name">
+
+                <input type="text" id="Email" name="Email" placeholder="Your Email">
+
+
+
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+                </form>
+            </div>
+            <h1 style="text-align:center; padding-top: 3%;">Contact</h1>
+        </div>
+        <footer>
+            <p><span>&copy bdengmas's group 2022</span></p>
+        </footer>
+    </section>
+
+</body>
+
+</html>
